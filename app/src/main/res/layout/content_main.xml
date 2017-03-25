@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.MainActivity">
+
+    <fragment
+        android:id="@+id/maps"
+        class="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rip"
+        android:layout_below="@+id/lnTitle"/>
+
+    <LinearLayout
+        android:id="@+id/lnTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <com.andexert.library.RippleView
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <dev.datvt.busfun.utils.CustomFontTextView
+                android:id="@+id/tvNotify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingBottom="5dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="5dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/introduce"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+        </com.andexert.library.RippleView>
+
+    </LinearLayout>
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rip"
+        rv_centered="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/ln"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="5dp">
+
+            <com.andexert.library.RippleView
+                rv_centered="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/btnBusList"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bus_list"/>
+
+            </com.andexert.library.RippleView>
+
+            <com.andexert.library.RippleView
+                rv_centered="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <dev.datvt.busfun.utils.CustomFontTextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bus_list"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"/>
+            </com.andexert.library.RippleView>
+        </LinearLayout>
+    </com.andexert.library.RippleView>
+</RelativeLayout>

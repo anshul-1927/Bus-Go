@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_bus_list"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/border_bus_id"
+            android:src="@drawable/ic_map_road"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <dev.datvt.busfun.utils.CustomFontTextView
+                    android:id="@+id/tvGoBus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Đi tuyến"
+                    android:textColor="@color/colorOrange"
+                    android:textStyle="bold"/>
+
+                <dev.datvt.busfun.utils.CustomFontTextView
+                    android:id="@+id/tvBusID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="52A"
+                    android:textColor="@color/colorRed"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <dev.datvt.busfun.utils.CustomFontTextView
+                android:id="@+id/tvBusNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Số tuyến cần đi: 1"
+                android:textColor="@color/colorGreen2"
+                android:textStyle="bold"/>
+
+            <dev.datvt.busfun.utils.CustomFontTextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Đi bộ: 500 m. Xe buýt: 1.4 Km"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

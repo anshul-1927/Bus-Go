@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/home">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_map"
+                    android:icon="@drawable/icon_maps"
+                    android:title="@string/map"/>
+                <item
+                    android:id="@+id/nav_bus_system"
+                    android:icon="@drawable/icon_system_bus"
+                    android:title="@string/bus_route"/>
+                <item
+                    android:id="@+id/nav_search_bus_station_nearest_me"
+                    android:icon="@drawable/icon_bus_stop"
+                    android:title="@string/nearest_bus"/>
+                <item
+                    android:id="@+id/nav_search_location"
+                    android:icon="@drawable/icon_location"
+                    android:title="@string/search_locations"/>
+                <item
+                    android:id="@+id/nav_find_road"
+                    android:icon="@drawable/icon_find_route"
+                    android:title="@string/search_route"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/utilities">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_read_new"
+                    android:icon="@drawable/icon_news_paper"
+                    android:title="@string/news"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/tools">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/icon_information"
+                    android:title="@string/info"/>
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="@string/share"/>
+                <item
+                    android:id="@+id/nav_vote"
+                    android:icon="@drawable/icon_rate"
+                    android:title="@string/rate"/>
+                <item
+                    android:id="@+id/nav_more_app"
+                    android:icon="@drawable/icon_more_app"
+                    android:title="@string/more_app"/>
+
+                <item
+                    android:id="@+id/nav_exit_app"
+                    android:icon="@drawable/icon_exit_app"
+                    android:title="@string/exit_app"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_go"
+        android:title="@string/show_go"/>
+    <item
+        android:id="@+id/item_back"
+        android:title="@string/show_back"
+    />
+    <item
+        android:id="@+id/item_all"
+        android:title="@string/show_all"
+    />
+</menu>
